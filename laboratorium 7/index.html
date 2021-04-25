@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang = "en" ng-app = "portfolioApp">
+  <!-- head -->
+  <head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport"
+          content = "width=device-width, initial-scale=1">
+
+    <!-- title -->
+    <title>Łukaszczyk Aleksandra 19390</title>
+        
+    <link rel = "stylesheet"
+          href = "https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+          integrity = "sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+          crossorigin = "anonymous">
+  
+    <script src = "https://code.jquery.com/jquery-1.12.4.min.js"    
+            integrity = "sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+            crossorigin = "anonymous">
+    </script>
+    
+    <script src = "https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+            integrity = "sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+            crossorigin = "anonymous">
+    </script>
+
+    <!-- java script -->
+    <script type = "text/javascript"
+            src = "js/form.js">
+    </script>
+
+    <script src = "js/angular.min.js"></script>
+    <script src = "js/controllers.js"></script>
+
+    <link href = "https://fonts.googleapis.com/css?family=Baloo+Chettan"
+          rel = "stylesheet">
+    <link href = "https://fonts.googleapis.com/css?family=Bangers"
+          rel = "stylesheet">
+
+    <!-- css -->
+    <link href = "style.css" rel = "stylesheet">
+  </head>
+
+  <!-- body -->
+  <body id = body>
+    <nav class = "navbar navbar-inverse navbar-fixed-top">
+      <div class = "container">
+        <div class = "navbar-header">
+        
+          <!-- button -->
+          <button type = "button"
+                  class = "navbar-toggle collapsed"
+                  data-toggle = "collapse"
+                  data-target = "#navbar-collapse-1"
+                  ariaexpanded = "false">
+
+            <span class = "sr-only">toggle navigation</span>
+            <span class = "icon-bar"></span>
+            <span class = "icon-bar"></span>
+            <span class = "icon-bar"></span>
+          </button>
+
+          <a class = "navbar-brand" href = "#">
+
+            <!-- logo -->
+            <div id = "logo">
+              <img src = "img/logo.png" alt = "title">
+            </div>
+          </a>
+        </div>
+
+        <div class = "collapse navbar-collapse" id = "navbar-collapse-1">
+
+          <!-- menu -->
+          <ul class = "nav navbar-nav text-right">
+
+            <!-- Main Site -->
+            <li class = "active">
+              <a href = "#main-page">
+                <span class = "glyphicon glyphicon-home"
+                      aria-hidden = "true">
+                </span> Main Site
+              </a>
+            </li>
+            
+            <!-- info -->
+            <li><a href = "#page1"><span class = "glyphicon glyphicon-globe"    aria-hidden = "true"></span> News</a></li>
+            <li><a href = "#page3"><span class = "glyphicon glyphicon-picture"  aria-hidden = "true"></span> Gallery</a></li>
+            <li><a href = "#">     <span class = "glyphicon glyphicon-earphone" aria-hidden = "true"></span> Contact</a></li>
+            <li><a href = "#">     <span class = "glyphicon glyphicon-barcode"  aria-hidden = "true"></span> More(...)</a></li>
+
+            <!-- formularz -->
+            <li><a href = "#page2"><span class = "glyphicon glyphicon-pencil"   aria-hidden = "true"></span> Contact Form</a></li>
+          </ul>
+
+          <!-- login -->
+          <ul class = "nav navbar-nav navbar-right">
+            <li>
+              <a href = "#"><span class = "glyphicon glyphicon-log-in"></span> ..login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <div class = "container">
+
+        <!-- picture -->
+        <div id = "carouselID" class = "carousel slide" data-ride = "carousel">
+          <ol class = "carousel-indicators">
+            <li data-target = "#carouselID" data-slide-to = "0"
+                class = "active">
+            </li>
+
+            <li data-target = "#carouselID" data-slide-to = "1"></li>
+            <li data-target = "#carouselID" data-slide-to = "2"></li>
+          </ol>
+          
+          <!-- picture - source -->
+          <div class = "carousel-inner" role = "listbox">
+
+            <!-- picture 1 -->
+            <div class = "item active">
+              <img src = "img/drawing1.png" alt = "original">
+              <div class = "carousel-caption">original</div>
+            </div>
+
+            <!-- picture 2 -->
+            <div class = "item">
+              <img src = "img/drawing2.png" alt = "colored pencil">
+              <div class = "carousel-caption">colored pencil</div>
+            </div>
+            
+            <!-- picture 3 -->
+            <div class = "item">
+              <img src = "img/drawing3.png" alt = "oil painting">
+              <div class = "carousel-caption">oil painting</div>
+            </div>
+          </div>
+
+          <!-- slide previous -->
+          <a class = "left carousel-control"
+             href = "#carouselID"
+             role = "button"
+             data-slide = "prev">
+            
+            <span class = "glyphicon glyphicon-chevron-left" ariahidden = "true"></span>
+            <span class = "sr-only">previous</span>
+            </a>
+    
+          <!-- slide next -->
+          <a class = "right carousel-control"
+             href = "#carouselID"
+             role = "button"
+             data-slide = "next">
+
+            <span class = "glyphicon glyphicon-chevron-right" ariahidden = "true"></span>
+            <span class = "sr-only">next</span>
+          </a> 
+        </div> 
+      </div>
+    </header>
+    
+    <!-- Main Site - title, text -->
+    <section id = "main-page" class = "jumbotron">
+      <div class = "container">
+
+        <!-- title -->
+        <h1 id = "nagl">
+          <span class = "glyphicon glyphicon-home"
+                aria-hidden = "true"
+                id = "big_icon">
+          </span> Main Site
+        </h1>
+
+        <!-- text -->
+        <p>
+          <b> Digital Art - what is it? </b><br>
+          <b> Digital Art / Digital Painting </b> is an emerging art form in which traditional painting techniques are applied using digital tools by means of a computer, a graphics tablet and stylus, and software. <br><br>
+          All digital painting programs try to mimic the use of physical media through various brushes and paint effects.
+          This ability is very important in bridging the gap between traditional and digital painting.
+        </p>
+      </div>
+    </section>
+      
+    <div class = "container text-center">    
+      <div class = "row content">
+
+        <!-- advertisement table -->
+        <div class = "col-sm-2 sidenav">
+
+          <!-- advertisement 1 -->
+          <div class = "well">
+            <p><b>advertisement</b></p>
+          </div>
+
+          <!-- advertisement 2 -->
+          <div class = "well">
+            <p><b>advertisement</b></p>
+          </div>
+
+          <!-- advertisement 3 -->
+          <div class = "well">
+            <p><b>advertisement</b></p>
+          </div>
+        </div>
+
+        <div class = "col-sm-8 text-left">
+          <h1 class = "text-danger" id = "nagl">Welcome to my Website!</h1>
+
+          <!-- table -->
+          <table class = "table">
+            <tr>
+              <td rowspan = "2">l.p.</td>
+              <td colspan = "2">person</td>
+              <td rowspan = "2">info</td>
+            </tr>
+            
+            <tr>
+              <td><b>first name:</b></td>
+              <td><b>last  name:</b></td>
+            </tr>
+            
+            <tr>
+              <td>1.</td>
+              <td>Bartosz</td>
+              <td>Drzewo</td>
+              <td>student</td>
+            </tr>
+            
+            <tr> 
+              <td>2.</td>
+              <td>Andrzej</td>
+              <td>Taczka</td>
+              <td>student</td>
+            </tr>
+            
+            <tr>
+              <td>3.</td>
+              <td>Mariusz</td>
+              <td>Beczka</td>
+              <td>student</td>
+            </tr>
+
+            <tr>
+              <td>4.</td>
+              <td>Marlena</td>
+              <td>Pomost</td>
+              <td>student</td>
+            </tr>
+
+          </table>
+        </div>
+
+        <!-- advertisement table -->
+        <div class = "col-sm-2 sidenav">
+
+          <!-- advertisement 1 -->
+          <div class = "well">
+            <p><b>advertisement</b></p>
+          </div>
+
+          <!-- advertisement 2 -->
+          <div class = "well">
+            <p><b>advertisement</b></p>
+          </div>
+
+          <!-- advertisement 3 -->
+          <div class=  "well">
+            <p><b>advertisement</b></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- News - title, text -->
+    <section id = "page1">
+      <div class = "container">
+
+        <!-- title -->
+        <h1 class = "text-danger" id = "nagl">
+          <span class = "glyphicon glyphicon-globe"
+                aria-hidden = "true"
+                id = "big_icon">
+          </span> News
+        </h1>
+
+        <!-- text -->
+        <p>
+          <b>The best drawing tablet 2021!</b><br>
+          Wacom's newest tablet, launched at CES 2020, the confusingly named <b> Wacom One </b> (not to be confused with any previous Wacom Ones)
+          is an excellent and portable 13-inch tablet at an extremely competitive price point, no doubt designed to tempt
+          users away from cheaper brands like XP-Pen
+
+        </p>    
+      </div>
+    </section>
+    
+    <div class= "container">
+      <div class = "row">
+
+        <!-- logo 1 -->
+        <div class = "col-sm-4 text-center">
+        <img src = "img/logo1.png" class = "img-circle center-block img-responsie"
+              alt = "logo"
+              height = 200
+              width  = 200> <h3 class = "text"><b>logo 001</b></h3>
+        </div>
+
+        <!-- logo 2 -->
+        <div class = "col-sm-4 text-center">
+        <img src = "img/logo1.png" class = "img-circle center-block img-responsie"
+             alt = "logo"
+             height = 200
+             width  = 200> <h3 class = "text"><b>logo 002</b></h3>
+        </div>
+
+        <!-- logo 3 -->
+        <div class = "col-sm-4 text-center">
+        <img src = "img/logo1.png" class = "img-circle center-block img-responsie"
+             alt = "logo"
+             height = 200
+             width = 200> <h3 class = "text"><b>logo 003</b></h3>
+        </div>
+      </div> 
+    </div>
+
+    <!-- Gallery -->
+    <section ng-controller = "GalleryListCtrl" id = "page3">
+      <div class = "container">
+        <h1 class = "text-danger"
+            id = "nagl"><span
+            class="glyphicon glyphicon-picture"
+            aria-hidden = "true" id = "big_icon"></span> Gallery
+        </h1>
+
+        <p>
+          TOP 6 Best Drawing Tablets for Graphics, Art and Illustrations!
+        </p> 
+      </div>
+    </section>
+    
+    <!-- Gallery List -->
+    <div class = "container" ng-controller = "GalleryListCtrl">
+      <div class = "row content text-center">
+
+        <!-- Search TextField: -->
+        <label>Search: </label>
+
+        <p><input type = "text" ng-model = "query" class = "form-control"><p>
+        <p ng-if = "query"><b>Results: </b> {{query}} </p>
+
+        <!-- total elements: -->
+        <span ng-if = "query == null">
+          <p><b>total elements: </b> {{galleries.length}} </p> 
+        </span>
+
+        <hr>
+          <!-- Sort: -->
+          <label>Sort: </label>
+
+          <select ng-model = "orderProp" ng-options = "sort as sort.label for sort in sortList" class = "form-control">
+              <option value = "title">Alphabetically</option>
+              <option value = "price"> Low Price</option>
+              <option value = "-price">High Price</option>
+          </select>
+
+          <p ng-if = "orderProp"><b>Sorted Gallery: </b> {{orderProp.label}} </p>
+          <p></p>
+
+          <div class = "col-sm-4"
+               ng-repeat = "gallery in galleries | filter: query | orderBy: orderProp.value">
+
+          <!-- image source -->
+          <img src = "{{gallery.thumbnailUrl}}" class = "img-responsive center-block" alt = "" height = 200 width = 350>
+
+          <h3>{{gallery.title}}</h3>
+          <p><strong>Price: </strong> {{gallery.price}}</p>
+        </div>
+      </div>
+    </div> 
+
+    <!-- contact form -->
+    <section id = "page2">
+      <div class = "container">
+        <h1 class = "text-danger" id = "nagl">
+          <span class = "glyphicon glyphicon-pencil"
+                aria-hidden = "true"
+                id = "big_icon">
+          </span> Contact Form
+        </h1>
+
+        <form action = "index.html#kontakt"
+              method = "post"
+              onsubmit = "return checkForm();">
+          
+          <fieldset>
+            <!-- legend -->
+            <legend>Here you can send a contact form:</legend>
+
+              <!-- first name -->
+              <div class = "form-group" id = "first_name">
+                <p id = "error_first_name" class = "hide">You must enter your first name!</p>
+                  <label for = "contact_first_name">First name</label>
+                  <input type = "text"
+                         class = "form-control"
+                         id = "contact_first_name"
+                         placeholder = "Enter your first name . . ."/>
+              </div>
+            
+              <!-- last name -->
+              <div class = "form-group" id = "last_name">
+                <p id = "error_last_name" class = "hide">You must enter your last name!</p>
+                    <label for = "contact_last_name">Last name</label>
+                    <input type = "text"
+                           class = "form-control"
+                           id = "contact_last_name"
+                           placeholder = "Enter your last name . . ."/>
+              </div>
+             
+              <!-- email -->
+              <div class = "form-group" id = "email">
+                <p id = "error_email" class = "hide">You must enter your email address!</p> 
+                  <label for = "contact_email">Email</label>
+                  <input type = "text"
+                         class = "form-control"
+                         id = "contact_email"
+                         placeholder = "Enter your email address . . ."/>
+              </div>
+    
+              <!-- info -->
+              <div class = "form-group" id = "info"> 
+                <p id = "error_info" class = "hide" >You must provide additional information!</p> 
+                  <label for = "contact_info">Additional Information</label>
+                  <textarea class = "form-control rounded-0"
+                            id = "contact_info"
+                            rows = "6"
+                            placeholder = "Provide additional information . . ."></textarea>
+              </div>
+    
+              <!-- submit -->
+            <input type = "submit"
+                   class = "btn btn-danger"
+                   value = "SUBMIT"/>
+                   
+          </fieldset>
+        </form>     
+      </div>
+    </section>
+    
+    <!-- footer -->
+    <footer class = "container text-center">
+      <div class = "container">
+        <button type = "button"
+                class = "btn btn-danger"
+                data-toggle = "modal"
+                data-target = "#myModal">
+                Polityka Prywatności <!-- text -->
+        </button> 
+      </div> 
+    </footer>
+    
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" arialabel="Close"><span ariahidden="true">&times;</span></button>
+              <h4 id="nagl" class="modal-title" id="myModalLabel">POLITYKA PRYWATNOŚCI</h4>
+          </div>
+
+          <div class="modal-body">
+            Phasellus finibus urna eget augue convallis convallis. Cras eu velit sit amet nisi pretium suscipit. 
+            Pellentesque suscipit arcu sed tellus dapibus, nec fermentum magna vehicula. Mauris lacinia tincidunt aliquet. 
+            Aliquam maximus libero ex, efficitur rutrum erat euismod accumsan. Vivamus rutrum molestie posuere. 
+            Sed a ante sed lectus mollis venenatis at et odio. Nunc in egestas ex. Nunc sollicitudin dolor molestie justo porttitor venenatis. 
+            Etiam accumsan eros sem, sit amet consequat diam finibus sit amet. Pellentesque ut lorem at lectus dignissim consectetur. 
+            Ut nulla dui, luctus in tortor ac, hendrerit suscipit felis.
+        </div> 
+        
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div> 
+        </div>
+      </div>
+    </div> 
+  </body>
+</html>
